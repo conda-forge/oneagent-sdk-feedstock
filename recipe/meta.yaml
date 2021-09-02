@@ -1,5 +1,6 @@
 {% set name = "oneagent-sdk" %}
 {% set version = "1.4.0.20210127.165413" %}
+{% set pystring = py|string %}
 
 
 package:
@@ -29,7 +30,7 @@ test:
     - oneagent._impl
   commands:
     - pip check
-    - test -f "${PREFIX}/lib/python3.8/site-packages/oneagent/_impl/native/libonesdk_shared.so"
+    - test -f "${PREFIX}/lib/python{{ pystring[0] }}.{{ pystring[1] }}/site-packages/oneagent/_impl/native/libonesdk_shared.so"
   requires:
     - pip
 
