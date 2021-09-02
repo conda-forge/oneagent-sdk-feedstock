@@ -11,15 +11,16 @@ source:
   sha256: c76ca9f4aace3286f405ea4d5719967d48fe0a59d1c87f74309931001d0af57f
 
 build:
-  number: 0
+  number: 1
   noarch: python
-  script: {{ PYTHON }} -m pip install . -vv
+  skip: true  # [not linux]
 
 requirements:
   host:
     - python
     - pip
     - wheel
+    - oneagent-sdk-for-c
   run:
     - python >=3.6
 
@@ -29,6 +30,7 @@ test:
     - oneagent._impl
   commands:
     - pip check
+    - test -f "${PREFIX}/lib/python3.8/site-packages/oneagent/_impl/native/libonesdk_shared.so"
   requires:
     - pip
 
