@@ -1,5 +1,6 @@
 {% set name = "oneagent-sdk" %}
 {% set version = "1.4.0.20210127.165413" %}
+{% set pystring = py|string %}
 
 
 package:
@@ -11,17 +12,17 @@ source:
   sha256: c76ca9f4aace3286f405ea4d5719967d48fe0a59d1c87f74309931001d0af57f
 
 build:
-  number: 0
-  noarch: python
-  script: {{ PYTHON }} -m pip install . -vv
+  number: 1
+  skip: true  # [not linux]
 
 requirements:
   host:
     - python
     - pip
     - wheel
+    - oneagent-sdk-for-c
   run:
-    - python >=3.6
+    - python
 
 test:
   imports:
@@ -29,6 +30,7 @@ test:
     - oneagent._impl
   commands:
     - pip check
+    - test -f "${PREFIX}/lib/python{{ pystring[0] }}.{{ pystring[1] }}/site-packages/oneagent/_impl/native/libonesdk_shared.so"
   requires:
     - pip
 
