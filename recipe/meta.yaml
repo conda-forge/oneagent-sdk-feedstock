@@ -21,7 +21,7 @@ requirements:
     - wheel
     - oneagent-sdk-for-c
   run:
-    - python >=3.6
+    - python
 
 test:
   imports:
