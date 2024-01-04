@@ -1,5 +1,5 @@
 {% set name = "oneagent-sdk" %}
-{% set version = "1.5.0.20221221.150433" %}
+{% set version = "1.5.1.20240104.95100" %}
 {% set pystring = py|string %}
 
 
@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/oneagent-sdk-{{ version }}.zip
-  sha256: fbaefe71d5efa0e552261daaf7a87b48c5cc32d64412302803eb45292ac7ef67
+  sha256: 2325b173b0f68b14b796e976cb5d640c0f89f410fce318179004203bd59d1607
 
 build:
   number: 0
