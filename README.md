@@ -1,11 +1,11 @@
-About oneagent-sdk
-==================
+About oneagent-sdk-feedstock
+============================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/oneagent-sdk-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/Dynatrace/OneAgent-SDK-for-Python
 
 Package license: Apache-2.0
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/oneagent-sdk-feedstock/blob/main/LICENSE.txt)
 
 Summary: Dynatrace OneAgent SDK for Python
 
@@ -41,10 +41,10 @@ Current build status
                 </a>
               </td>
             </tr><tr>
-              <td>linux_64_python3.8.____73_pypy</td>
+              <td>linux_64_python3.12.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=12926&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/oneagent-sdk-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_python3.8.____73_pypy" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/oneagent-sdk-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_python3.12.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
