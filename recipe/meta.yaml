@@ -19,6 +19,7 @@ requirements:
   host:
     - python
     - pip
+    - setuptools
     - wheel
     - oneagent-sdk-for-c
   run:
@@ -30,7 +31,7 @@ test:
     - oneagent._impl
   commands:
     - pip check
-    - test -f "${PREFIX}/lib/python{{ pystring[0] }}.{{ pystring[1] }}/site-packages/oneagent/_impl/native/libonesdk_shared.so"
+    - test -f "${SP_DIR}/oneagent/_impl/native/libonesdk_shared.so"
   requires:
     - pip
 
