@@ -43,15 +43,12 @@ description = "Build oneagent-sdk-feedstock with variant linux_64_python3.12.___
 [tasks."inspect-linux_64_python3.12.____cpython"]
 cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_64_python3.12.____cpython.yaml"
 description = "List contents of oneagent-sdk-feedstock packages built for variant linux_64_python3.12.____cpython"
-<<<<<<< HEAD
-=======
 [tasks."build-linux_64_python3.13.____cp313"]
 cmd = "rattler-build build --recipe recipe -m .ci_support/linux_64_python3.13.____cp313.yaml"
 description = "Build oneagent-sdk-feedstock with variant linux_64_python3.13.____cp313 directly (without setup scripts)"
 [tasks."inspect-linux_64_python3.13.____cp313"]
 cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_64_python3.13.____cp313.yaml"
 description = "List contents of oneagent-sdk-feedstock packages built for variant linux_64_python3.13.____cp313"
->>>>>>> b42a77ed0e7b93ea86d663e15f788fa924eb95f3
 [tasks."build-linux_64_python3.9.____cpython"]
 cmd = "rattler-build build --recipe recipe -m .ci_support/linux_64_python3.9.____cpython.yaml"
 description = "Build oneagent-sdk-feedstock with variant linux_64_python3.9.____cpython directly (without setup scripts)"
