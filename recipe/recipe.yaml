@@ -2,18 +2,18 @@ schema_version: 1
 
 context:
   name: oneagent-sdk
-  version: 1.5.1.20240104.95100
+  version: "1.5.2.20260107.153442"
 
 package:
   name: ${{ name|lower }}
   version: ${{ version }}
 
 source:
-  url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/oneagent-sdk-${{ version }}.zip
-  sha256: 2325b173b0f68b14b796e976cb5d640c0f89f410fce318179004203bd59d1607
+  url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/${{ name | replace('-', '_') }}-${{ version }}.tar.gz
+  sha256: 6442ac5c1ec395f0e897516f8a25a012d85744d8f33bd9f7e2db9eac411b9179
 
 build:
-  number: 4
+  number: 0
   skip: not linux
 
 requirements:
